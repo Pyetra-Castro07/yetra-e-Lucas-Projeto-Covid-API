@@ -1,0 +1,352 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    background-color: #64a5a4;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    padding-left: 15px;
+    padding-top: 40px;
+    font-size: 30px;
+    color: white;
+}
+
+#logo {
+    width:128px;
+    margin-left: 5px;
+
+}
+
+nav a{
+    text-align: right;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+
+#logo2{
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav{
+    padding-right: 25px;
+}
+
+nav a:hover {
+    color: #a8a8a7;
+}
+
+
+#imagem-meio img{
+    width: 100%;
+    height: 700px;
+
+}
+
+#container {
+    padding: 20px 100px 50px 100px;
+    text-align: center;
+}
+
+h1 {
+    color:  #226381; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+#home {
+    text-align: center;
+}
+
+#mapa-pizza {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#mapa {
+    width: 70%; 
+    height: 500px;
+}
+
+#pizza {
+    width: 30%; 
+    height: 500px;
+}
+
+#obter-dados {
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    margin: 25px 675px;
+    background-color: #30b88e;
+    color: white;
+    font-size: 30px;
+    border: none;
+}
+
+#div-erro {
+    background-color: firebrick;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    display: none;
+}
+
+#tabela-dados {
+    width: 300px;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 35px;
+}
+
+th {
+    background-color:#60ddb1;
+    color: white;
+    border-radius: 10px;
+    border: 1px;
+    padding: 2px 10px;
+}
+
+.listra {
+    background-color: #60ddb1;
+}
+
+.container {
+    background-image: url(../covid-fundos.jpg);
+    height: 100px;
+}
+
+.h1 {
+    color: white;
+    font-size: 70px;
+}
+
+.titulos {
+    width: 38%;
+    height: 70px;
+    background-color: #64a5a4;
+    border-radius: 30px;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    margin-left: 50px;
+}
+
+.texto {
+    font-size: 25px;
+    margin: 20px;
+}
+
+#sintomas {
+    width: 25%;
+}
+
+#img-sintomas {
+    text-align: center;
+}
+
+#transmissao {
+    width: 48%;
+}
+
+#prevencao {
+    width: 25%;
+}
+
+#img-prevencao{
+    text-align: center;
+}
+
+#objetivo {
+    width: 25%;
+}
+
+#ferramentas {
+    width: 48%;
+}
+
+#fontes {
+    width: 25%;
+}
+
+#covid {
+    width: 170%;
+}
+
+#img-equipe {
+    margin: 20px;
+    width: 50%;
+}
+
+#equipe {
+    display: flex;
+}
+
+#txt-equipe {
+    width: 50%;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 767px) {
+   
+    /* INDEX.HTML */
+
+    header {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    nav {
+        margin: 8px 0;
+    }
+
+    #imagem-meio {
+        width: 100%;
+    }
+
+    #mapa-pizza {
+        height: 350px;
+    }
+
+    #mapa {
+        width: 60%;
+        height: 330px;
+    }
+
+    #pizza {
+        width: 40%;
+        height: 350px;
+    }
+
+    #dados {
+        width: 100%;
+    }
+
+    #tabela-dados {
+        width: 100%;
+        font-size: 9px;
+    }
+
+    #obter-dados {
+        margin: 20px;
+    }
+
+    /* SOBRE.HTML */
+
+    #sobre {
+        font-size: 52px;
+    }
+
+    .titulos {
+        font-size: 15px;
+        width: 250px;
+    }
+
+    #sintomas {
+        width: 250px;
+    }
+
+    #prevencao {
+        width: 250px;
+    }
+
+    #objetivo {
+        width: 250px;
+    }
+
+    #ferramentas {
+        width: 270px;
+    }
+
+    #fontes {
+        width: 220px;
+    }
+
+    #img-sintomas {
+        width: 100%;
+    }
+
+    #img-prevencao {
+        width: 100%;
+    }
+
+    .site {
+        font-size: 10px;
+    }
+
+    /* EQUIPE.HTML */
+
+    #equipe {
+        font-size: 35px;
+    }
+
+    #img-equipe {
+        width: 65%;
+    }
+
+    #txt-equipe {
+        width: 35%;
+    }
+
+    #txt-equipe p {
+        font-size: 12px;
+    }
+
+    #txt-equipe li {
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 768px) AND (max-width: 1280px) {
+    #tabela-dados {
+        font-size: 22px;
+    }
+
+    #obter-dados {
+        margin: 30px;
+    }
+
+    #img-sintomas {
+        width: 100%;
+    }
+
+    #img-prevencao {
+        width: 100%;
+    }
+
+    .titulos {
+        width: 480px;
+    }
+
+    .titulos h2 {
+        font-size: 32px;
+    }
+
+    #sintomas {
+        width: 300px;
+    }
+
+    #prevencao {
+        width: 350px;
+    }
+
+    .site {
+        font-size: 22px;
+    }
+}
+

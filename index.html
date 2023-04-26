@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Covid-19 API</title>
+</head>
+<body onload="obterdados(), obterdados2(), obterdados3()"> 
+    <!--Barra de topo do site-->
+    <header>
+        <div id="logo2">
+            <img id="logo" src="Design_sem_nome__1_-removebg-preview (2).png" alt="logotipo" />
+            <h1>COVID-19</h1>
+        </div>
+         <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="equipe.html">Equipe de Projeto </a>
+        </nav>
+    </header>
+
+    <div id="imagem-meio">
+        <img src="Covid-19-8.png" alt="meio">
+    </div>
+    <h1 id="home">Painel Coronavírus</h1>
+    <div id="graficos">
+        <div id="mapa-pizza">
+            <div id="mapa"></div>
+            <div id="pizza"></div>
+        </div>    
+        <div id="div-erro">...</div>
+        <div id="dados">
+            <table id="tabela-dados">
+                <thead>
+                    <tr>
+                        <th>Estado</th>
+                        <th>Sigla</th>
+                        <th>Casos</th>
+                        <th>Mortos</th>
+                        <th>Suspeitos</th>
+                        <th>Descartados</th>
+                    </tr>
+                </thead>
+                <tbody id="linhas"></tbody>
+            </table>
+        </div>
+    </div>
+    <button id="obter-dados" onclick="obterdados(), obterdados2(), obterdados3()">Atualizar</button>
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
